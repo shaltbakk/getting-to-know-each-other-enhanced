@@ -1,0 +1,12 @@
+h1 { color:blue}
+h2 { color:red}
+#header3 {color:blueviolet}
+p,h1,h2,#header3,h3,ul,#me.png {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+button {
+    position: relative;
+    left:25%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Author: Sindre Haltbakk
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+        <link rel="stylesheet" href="hello-world.css">
+    </head>
+    <body>
+        <script>
+            function intro() {
+                if (document.getElementById("1").hidden==true)
+                    {document.getElementById("1").hidden=false;}    
+                else {
+                    document.getElementById("1").hidden=true;
+                }    
+            }
+            function learn() {
+                if (document.getElementById("2").hidden==true)
+                    {document.getElementById("2").hidden=false;}    
+                else {
+                    document.getElementById("2").hidden=true;
+                }
+            }
+            function favorite() {
+                if (document.getElementById("3").hidden==true)
+                    {document.getElementById("3").hidden=false;}    
+                else {
+                    document.getElementById("3").hidden=true;
+                }    
+            }
+            function fun() {
+                if (document.getElementById("4").hidden==true)
+                    {document.getElementById("4").hidden=false;}    
+                else {
+                    document.getElementById("4").hidden=true;
+                }   
+            }
+            function you() {
+                if (document.getElementById("5").hidden==true)
+                    {document.getElementById("5").hidden=false;}    
+                else {
+                    document.getElementById("5").hidden=true;
+                }
+            }
+            function me() {
+                document.getElementById("me").style.color="blueviolet"
+            }
+            </script>  
+        
+        <h1 id="me" onclick="me()">Hello World - Sindre Haltbakk</h1>
+        <h2>Version 2</h2>
+        
+        <img src="me.png" alt="Sindre's Picture" style="width:250px; position: relative; left: 40%;" id="me.png">
+      
+        <p><a href="mailto:sindremhaltbakk@lewisu.edu">Email Sindre!</a></p>
+        <p>Sindre's Discord: Sindre#4932</p> 
+    </body>
+
+    <button onclick="intro()" id="intro">Introduction</button><br>
+        <p id="1" hidden>My name is Sindre, and I am from Norway. I moved to Illinois this previous August. However, I lived in Florida for approximately 6 years. 
+            I hold an Airline Transport Pilot certificate and will be pursuing my career in aviation this spring. 
+            My family is back home in Norway. In addition to my parents, I have 4 older siblings: 10 nieces and nephews, ages ranging 7-20 years-old. 
+            When the whole family meets up, there are almost 30 of us!
+            My major is Aviation Administration.     </p>
+
+    <button onclick="learn()" id="learn">What I hope to Learn in this Course</button><br>
+        <ul id="2" class="square-list">
+            <!-- List items -->
+            <li>Improve my overall knowledge within computer science.</li>
+            <li>Be able to make my own website.</li>
+        </ul> 
+
+    <button onclick="favorite()" id="favorite">My Favorite Hobby/Activity</button><br> 
+        <ul id="3" class="square-list">
+            <!-- List items -->
+            <li>Gaming</li>
+            <li>Hiking</li>
+            <li>Listening to music, whereas Elvis is my absolute favorite entertainer. </li>
+            <li><a href="https://www.alltrails.com/us/illinois/romeoville">Local trails in Romeoville</a></li>
+        </ul> 
+
+    <button onclick="fun()" id="fun">Fun fact</button><br>  
+        <p id="4">In high school or videregående as it is called in Norway, I tried to bribe Mr. Jens Stoltenberg, the Prime Minister of Norway; as a joke. He declined my offer of $10.</p>
+
+    <button onclick="you()" id="you">You can always go around</button><br>
+        <div id="5"><p><span style='font-size:50px;'>&#128071;</span>Below is a video with a message song. This song is primarily for pilots, however I think the message is a message about life.</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/watch?v=lr5d3sGxSXQ" id="video" style="width:250px; position: relative; left: 30%;"></iframe>
+        </div>
+    
+    <button onclick="window.print()" style="position: relative; top: 20px;">Print this page</button><br>
+    </body>
+    </html>
+
